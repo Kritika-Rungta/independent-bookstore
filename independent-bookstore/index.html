@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="Discover upcoming author readings, book clubs, literary discussions and community events at your independent bookstore."
+    />
+
+    <title>Bookshop Events | Independent Bookstore</title>
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/components.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+
+    <script src="js/utils.js" defer></script>
+    <script src="js/events.js" defer></script>
+    <script src="js/validation.js" defer></script>
+    <script src="js/main.js" defer></script>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main-content"> Skip to main content </a>
+
+    <!-- Navigation -->
+    <header class="site-header">
+      <div class="container nav-wrapper">
+        <a href="index.html" class="brand" aria-label="Bookshop home">
+          <span class="brand-mark">B.</span>
+          <span class="brand-name">
+            THE INDEPENDENT
+            <small>BOOKSHOP</small>
+          </span>
+        </a>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="#events">Events</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <a href="#events" class="nav-button"> Explore Events </a>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="container hero-content">
+          <p class="eyebrow">BOOKS · PEOPLE · COMMUNITY</p>
+
+          <h1>
+            A place where
+            <span>stories come alive.</span>
+          </h1>
+
+          <p class="hero-description">
+            Join us for author conversations, reading sessions, book clubs and
+            gatherings that bring our literary community together.
+          </p>
+
+          <a href="#events" class="primary-button">
+            Discover upcoming events
+            <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- Events Section -->
+      <section class="events-section" id="events">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">WHAT'S HAPPENING</p>
+              <h2>Upcoming events</h2>
+              <p class="section-description">
+                Find your next favourite literary experience.
+              </p>
+            </div>
+
+            <span class="event-count" id="event-count"> 0 EVENTS </span>
+          </div>
+
+          <!-- Search and Filter -->
+          <div class="event-toolbar">
+            <div class="search-wrapper">
+              <label for="event-search"> Search events </label>
+
+              <input
+                type="search"
+                id="event-search"
+                placeholder="Search by event name..."
+                aria-label="Search bookstore events"
+              />
+            </div>
+
+            <div class="filter-wrapper">
+              <label for="event-category"> Event category </label>
+
+              <select id="event-category">
+                <option value="all">All events</option>
+                <option value="author">Author Talks</option>
+                <option value="book-club">Book Clubs</option>
+                <option value="workshop">Workshops</option>
+                <option value="community">Community</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Loading State -->
+          <div
+            class="loading-state"
+            id="loading-state"
+            role="status"
+            aria-live="polite"
+            hidden
+          >
+            <span class="loader" aria-hidden="true"></span>
+            <p>Loading events...</p>
+          </div>
+          <div class="error-state" id="error-state" role="alert" hidden>
+            <h3>Unable to load events</h3>
+            <p id="error-message">
+              Please check your connection and try again.
+            </p>
+
+            <button type="button" id="retry-button" class="event-action">
+              Try Again
+            </button>
+          </div>
+
+          <p
+            id="connection-status"
+            class="connection-status"
+            role="status"
+            aria-live="polite"
+          ></p>
+          <!-- Event List -->
+          <div class="events-grid" id="events-container" aria-live="polite">
+            <!-- JavaScript renders event cards here -->
+          </div>
+
+          <!-- Empty State -->
+          <div class="empty-state" id="empty-state" hidden>
+            <span class="empty-icon" aria-hidden="true">○</span>
+            <h3>No events found</h3>
+            <p>Try changing your search or selecting another category.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section class="about-section" id="about">
+        <div class="container about-content">
+          <p class="eyebrow">MORE THAN JUST BOOKS</p>
+
+          <h2>
+            Bringing readers
+            <span>closer together.</span>
+          </h2>
+
+          <p>
+            We believe independent bookstores are spaces for discovery,
+            conversations and meaningful connections. Our events celebrate
+            authors, readers and the community that makes literature special.
+          </p>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="contact-section" id="contact">
+        <div class="container">
+          <p class="eyebrow">GET IN TOUCH</p>
+
+          <h2>Have a question?</h2>
+
+          <p>
+            Contact our bookstore team for information about upcoming events and
+            participation.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <a href="index.html" class="footer-brand"> THE INDEPENDENT BOOKSHOP </a>
+
+        <p>Celebrating books, readers and community.</p>
+
+        <p class="copyright">
+          &copy; 2026 Independent Bookshop. All rights reserved.
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

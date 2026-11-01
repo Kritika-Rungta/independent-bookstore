@@ -1,0 +1,388 @@
+
+/* =========================================
+   INDEPENDENT BOOKSHOP
+   Global Styles & Design System
+========================================= */
+
+/* Design Tokens */
+
+:root {
+    --color-background: #f7f6f2;
+    --color-surface: #ffffff;
+    --color-primary: #252525;
+    --color-secondary: #686868;
+    --color-border: #deded9;
+    --color-muted: #eeeeea;
+
+    --font-primary: Arial, Helvetica, sans-serif;
+
+    --container-width: 1180px;
+
+    --space-1: 8px;
+    --space-2: 16px;
+    --space-3: 24px;
+    --space-4: 32px;
+    --space-5: 48px;
+    --space-6: 64px;
+}
+
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+body {
+    background: var(--color-background);
+    color: var(--color-primary);
+    font-family: var(--font-primary);
+    line-height: 1.6;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button,
+input,
+select {
+    font: inherit;
+}
+
+button,
+a,
+input,
+select {
+    -webkit-tap-highlight-color: transparent;
+}
+
+/* Accessibility */
+
+:focus-visible {
+    outline: 3px solid var(--color-secondary);
+    outline-offset: 4px;
+}
+
+.skip-link {
+    position: absolute;
+    top: -100px;
+    left: 16px;
+    z-index: 1000;
+    background: var(--color-primary);
+    color: var(--color-surface);
+    padding: 12px 20px;
+}
+
+.skip-link:focus {
+    top: 16px;
+}
+
+/* Container */
+
+.container {
+    width: min(
+        calc(100% - 48px),
+        var(--container-width)
+    );
+    margin-inline: auto;
+}
+
+/* Header */
+
+.site-header {
+    background: var(--color-background);
+    border-bottom: 1px solid var(--color-border);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-wrapper {
+    min-height: 84px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-4);
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.brand-mark {
+    width: 42px;
+    height: 42px;
+    background: var(--color-primary);
+    color: var(--color-surface);
+    display: grid;
+    place-items: center;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.brand-name {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    line-height: 1.3;
+}
+
+.brand-name small {
+    display: block;
+    font-size: 10px;
+    letter-spacing: 3px;
+    font-weight: 400;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    gap: 36px;
+}
+
+.main-nav a {
+    font-size: 14px;
+    color: var(--color-secondary);
+    transition: color 0.2s ease;
+}
+
+.main-nav a:hover {
+    color: var(--color-primary);
+}
+
+.nav-button,
+.primary-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    background: var(--color-primary);
+    color: var(--color-surface);
+    padding: 13px 22px;
+    font-size: 13px;
+    font-weight: 600;
+    border: 1px solid var(--color-primary);
+    transition: background 0.2s ease;
+}
+
+.nav-button:hover,
+.primary-button:hover {
+    background: #454545;
+}
+
+/* Hero */
+
+.hero {
+    padding: 112px 0 120px;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.hero-content {
+    max-width: var(--container-width);
+}
+
+.eyebrow {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2.5px;
+    color: var(--color-secondary);
+    margin-bottom: var(--space-3);
+}
+
+.hero h1 {
+    max-width: 850px;
+    font-size: clamp(44px, 7vw, 84px);
+    line-height: 1.05;
+    letter-spacing: -3px;
+    font-weight: 700;
+}
+
+.hero h1 span,
+.about-content h2 span {
+    display: block;
+    color: var(--color-secondary);
+}
+
+.hero-description {
+    max-width: 520px;
+    margin: var(--space-4) 0;
+    color: var(--color-secondary);
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.primary-button {
+    margin-top: var(--space-2);
+    min-height: 48px;
+}
+
+/* Events Section */
+
+.events-section {
+    padding: 100px 0;
+}
+
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: var(--space-4);
+    margin-bottom: var(--space-5);
+}
+
+.section-heading h2,
+.contact-section h2 {
+    font-size: clamp(32px, 5vw, 48px);
+    line-height: 1.15;
+    letter-spacing: -1.5px;
+}
+
+.section-description {
+    margin-top: 12px;
+    color: var(--color-secondary);
+    font-size: 14px;
+}
+
+.event-count {
+    font-size: 11px;
+    letter-spacing: 1.5px;
+    color: var(--color-secondary);
+    white-space: nowrap;
+}
+
+/* Event Toolbar */
+
+.event-toolbar {
+    display: flex;
+    gap: var(--space-3);
+    align-items: end;
+    margin-bottom: var(--space-4);
+    padding: var(--space-3);
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+}
+
+.search-wrapper,
+.filter-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.search-wrapper {
+    flex: 1;
+}
+
+.filter-wrapper {
+    width: 220px;
+}
+
+.event-toolbar label {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.event-toolbar input,
+.event-toolbar select {
+    width: 100%;
+    height: 46px;
+    padding: 0 14px;
+    border: 1px solid var(--color-border);
+    background: var(--color-background);
+    color: var(--color-primary);
+}
+
+.event-toolbar input:focus,
+.event-toolbar select:focus {
+    border-color: var(--color-primary);
+    outline-offset: 2px;
+}
+
+/* About Section */
+
+.about-section {
+    padding: 100px 0;
+    background: var(--color-muted);
+}
+
+.about-content {
+    max-width: 1180px;
+}
+
+.about-content h2 {
+    max-width: 700px;
+    font-size: clamp(36px, 6vw, 64px);
+    line-height: 1.1;
+    letter-spacing: -2px;
+}
+
+.about-content > p:last-child {
+    max-width: 620px;
+    margin-top: var(--space-4);
+    color: var(--color-secondary);
+    line-height: 1.9;
+}
+
+/* Contact Section */
+
+.contact-section {
+    padding: 100px 0;
+}
+
+.contact-section p:last-child {
+    margin-top: var(--space-3);
+    color: var(--color-secondary);
+    max-width: 550px;
+}
+
+/* Footer */
+
+.site-footer {
+    background: var(--color-primary);
+    color: var(--color-surface);
+    padding: 48px 0;
+}
+
+.footer-content {
+    text-align: center;
+}
+
+.footer-brand {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.footer-content p {
+    margin-top: 12px;
+    font-size: 13px;
+    color: #d0d0d0;
+}
+
+.copyright {
+    margin-top: 28px !important;
+    font-size: 11px !important;
+}
+
+/* Reduced Motion */
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+    }
+}

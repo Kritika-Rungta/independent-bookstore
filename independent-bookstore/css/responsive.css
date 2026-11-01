@@ -1,0 +1,154 @@
+
+/* =========================================
+   INDEPENDENT BOOKSHOP
+   RESPONSIVE STYLES
+========================================= */
+
+/* Tablet */
+
+@media (max-width: 900px) {
+
+    .events-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .hero {
+        padding: 90px 0;
+    }
+
+    .events-section,
+    .about-section,
+    .contact-section {
+        padding: 80px 0;
+    }
+
+    .main-nav {
+        gap: 20px;
+    }
+
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .container {
+        width: calc(100% - 32px);
+    }
+
+    .nav-wrapper {
+        min-height: 72px;
+        flex-wrap: wrap;
+        gap: 12px;
+        padding: 12px 0;
+    }
+
+    .brand-mark {
+        width: 36px;
+        height: 36px;
+    }
+
+    .brand-name {
+        font-size: 10px;
+    }
+
+    .brand-name small {
+        font-size: 9px;
+    }
+
+    .main-nav {
+        order: 3;
+        width: 100%;
+        justify-content: space-between;
+        padding-top: 10px;
+        border-top: 1px solid var(--color-border);
+    }
+
+    .main-nav a {
+        font-size: 12px;
+    }
+
+    .nav-button {
+        padding: 10px 13px;
+        font-size: 11px;
+    }
+
+    .hero {
+        padding: 72px 0;
+    }
+
+    .hero h1 {
+        font-size: 46px;
+        letter-spacing: -2px;
+    }
+
+    .hero-description {
+        font-size: 14px;
+    }
+
+    .events-section,
+    .about-section,
+    .contact-section {
+        padding: 64px 0;
+    }
+
+    .section-heading {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    .event-toolbar {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 16px;
+    }
+
+    .filter-wrapper {
+        width: 100%;
+    }
+
+    .events-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .event-card-content {
+        padding: 20px;
+    }
+
+    .about-content h2 {
+        font-size: 40px;
+    }
+
+    .toast-container {
+        left: 16px;
+        right: 16px;
+        bottom: 16px;
+    }
+
+    .toast {
+        min-width: 0;
+        width: 100%;
+    }
+
+}
+
+/* Very Small Devices */
+
+@media (max-width: 360px) {
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .brand {
+        gap: 8px;
+    }
+
+    .nav-button {
+        font-size: 10px;
+        padding: 9px;
+    }
+
+}

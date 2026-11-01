@@ -1,0 +1,63 @@
+
+[
+  {
+    "id": "event-001",
+    "title": "An Evening with Local Authors",
+    "category": "author",
+    "description": "Meet local writers and discover the stories behind their latest publications.",
+    "date": "2026-11-15",
+    "time": "06:00 PM",
+    "location": "Main Bookshop",
+    "status": "upcoming"
+  },
+  {
+    "id": "event-002",
+    "title": "Monthly Reading Circle",
+    "category": "book-club",
+    "description": "Join fellow readers for an open discussion about this month's selected book.",
+    "date": "2026-11-18",
+    "time": "04:30 PM",
+    "location": "Reading Room",
+    "status": "upcoming"
+  },
+  {
+    "id": "event-003",
+    "title": "Creative Writing Workshop",
+    "category": "workshop",
+    "description": "Explore creative writing techniques and develop your storytelling skills.",
+    "date": "2026-11-22",
+    "time": "11:00 AM",
+    "location": "Community Hall",
+    "status": "upcoming"
+  },
+  {
+    "id": "event-004",
+    "title": "Poetry and Coffee Evening",
+    "category": "community",
+    "description": "An informal gathering for poetry lovers, featuring readings and conversations.",
+    "date": "2026-11-25",
+    "time": "05:00 PM",
+    "location": "Main Bookshop",
+    "status": "upcoming"
+  },
+  {
+    "id": "event-005",
+    "title": "Meet the Author",
+    "category": "author",
+    "description": "A conversation about writing, inspiration, books and the creative process.",
+    "date": "2026-11-28",
+    "time": "06:30 PM",
+    "location": "Reading Room",
+    "status": "upcoming"
+  },
+  {
+    "id": "event-006",
+    "title": "Weekend Storytelling Session",
+    "category": "community",
+    "description": "An interactive storytelling session celebrating the joy of reading.",
+    "date": "2026-12-02",
+    "time": "10:30 AM",
+    "location": "Children's Section",
+    "status": "upcoming"
+  }
+]
