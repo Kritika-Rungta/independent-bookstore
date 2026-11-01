@@ -259,9 +259,9 @@ For deployment, ensure the HTML, CSS, JavaScript, JSON data, and image assets ar
 
 ## Repository and Deployment Links
 
-GitHub Repository: Add your repository URL.
+GitHub Repository: https://github.com/Kritika-Rungta/independent-bookstore--1-.git
 
-Live Application: Add your deployment URL.
+Live Application: https://willowy-daifuku-aa5f1d.netlify.app/
 
 ---
 
