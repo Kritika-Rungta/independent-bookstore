@@ -20,7 +20,7 @@ The application is designed with a minimal monochromatic visual system, responsi
 
 ## Project Preview
 
-![Independent Bookstore Events Page](assets/images/bookstore.png)
+![Independent Bookstore Events Page](independent-bookstore/assets/images)
 
 *Screenshot of the Independent Bookstore Events Page.*
 
